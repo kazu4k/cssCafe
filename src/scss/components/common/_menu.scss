@@ -1,0 +1,20 @@
+.Menu {
+    display: flex;
+    justify-content: space-around;
+
+    @include menu-font;
+
+    @include mq-sp {
+        flex-direction: column;
+    }
+
+    &__item {
+        display: block;
+        padding: 10px 15px;
+        text-transform: uppercase;
+    }
+
+    &--sub {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,27 @@
+.NewsList {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0px $space-unit/2;
+    padding-inline-start: 0;
+
+    @include mq-sp {
+        font-size: 12px;
+    }
+
+    &__items {
+        display: table-row-group;
+    }
+
+    &__item {
+        display: table-row;
+    }
+
+    &__head {
+        display: table-cell;
+        padding-right: $column-space;
+    }
+
+    &__body {
+        display: table-cell;;
+    }
+}
